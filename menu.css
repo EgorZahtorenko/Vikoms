@@ -1,0 +1,197 @@
+/* Colors for Vikoms */
+nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #02147f;
+  width: 100%;
+  height: 120px;
+}
+nav img {
+  margin-top: 5px;
+}
+#mainMenu {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainMenu #submenu,
+#mainMenu #submenu1,
+#mainMenu #submenu2,
+#mainMenu #submenu3,
+#mainMenu #submenu4,
+#mainMenu #submenu5 {
+  display: none;
+}
+#mainMenu #submenu ul,
+#mainMenu #submenu1 ul,
+#mainMenu #submenu2 ul,
+#mainMenu #submenu3 ul,
+#mainMenu #submenu4 ul,
+#mainMenu #submenu5 ul {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainMenu li {
+  list-style-type: none;
+  font-size: 16px;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+#mainMenu li a {
+  text-decoration: none;
+  color: #02147f;
+  height: 60px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mainMenu li:hover a {
+  color: #02147f;
+}
+#mobiles:hover #submenu {
+  display: flex;
+  font-weight: 300;
+  position: absolute;
+  justify-content: space-around;
+  top: 120px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 200px;
+  animation: fade-Out 0.5s both, fade-in 0.5s both;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+}
+#mobiles:hover #submenu ul {
+  display: flex;
+}
+#mobiles:hover #submenu .picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+#mobiles:hover #submenu a:hover {
+  width: auto;
+  color: red;
+}
+#mainMenu:hover a {
+  color: #e1e4eb;
+  transition: .2s;
+}
+#mobiles1:hover #submenu1,
+#mobiles1:target #submenu1 {
+  display: flex;
+  font-weight: 300;
+  position: absolute;
+  justify-content: space-around;
+  top: 120px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 200px;
+  animation: fade-Out 0.5s both, fade-in 0.5s both;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+}
+#mobiles1:hover #submenu1 .picture,
+#mobiles1:target #submenu1 .picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+#mobiles1:hover #submenu1 a:hover,
+#mobiles1:target #submenu1 a:hover {
+  width: auto;
+  color: red;
+}
+#mobiles2:hover #submenu2,
+#mobiles2:target #submenu2 {
+  display: flex;
+  font-weight: 300;
+  position: absolute;
+  justify-content: space-around;
+  top: 120px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 200px;
+  animation: fade-Out 0.5s both, fade-in 0.5s both;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+}
+#mobiles2:hover #submenu2 .picture,
+#mobiles2:target #submenu2 .picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+#mobiles2:hover #submenu2 a:hover,
+#mobiles2:target #submenu2 a:hover {
+  width: auto;
+  color: red;
+}
+#mobiles3:hover #submenu3,
+#mobiles3:target #submenu3 {
+  display: flex;
+  font-weight: 300;
+  position: absolute;
+  justify-content: space-around;
+  top: 120px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 200px;
+  animation: fade-Out 0.5s both, fade-in 0.5s both;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+}
+#mobiles3:hover #submenu3 .picture,
+#mobiles3:target #submenu3 .picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+#mobiles3:hover #submenu3 a:hover,
+#mobiles3:target #submenu3 a:hover {
+  width: auto;
+  color: red;
+}
+#mobiles4:hover #submenu4,
+#mobiles4:target #submenu4 {
+  display: flex;
+  font-weight: 300;
+  position: absolute;
+  justify-content: space-around;
+  top: 120px;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  min-height: 200px;
+  animation: fade-Out 0.5s both, fade-in 0.5s both;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+}
+#mobiles4:hover #submenu4 .picture,
+#mobiles4:target #submenu4 .picture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+#mobiles4:hover #submenu4 a:hover,
+#mobiles4:target #submenu4 a:hover {
+  width: auto;
+  color: red;
+}

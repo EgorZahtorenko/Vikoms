@@ -1,0 +1,207 @@
+/* Colors for Vikoms */
+@light: #e1e4eb;
+@blue: #02147f;
+
+nav{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: @blue;
+  width: 100%;
+  height: 120px;
+  & img{
+    margin-top: 5px;
+  }
+}
+#mainMenu{
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  background-color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //@media all and (min-width: 200px) and (max-width: 1190px){
+  //  opacity: 0;
+  //}
+  //& #litMenu{
+  //  display: none;
+  //  width: 100%;
+  //  height: 60px;
+  //  padding: 0;
+  //  background-color: white;
+  //  @media all and (min-width: 200px) and (max-width: 1190px){
+  //    display: block;
+  //  }
+  //}
+  & #submenu, #submenu1,#submenu2,#submenu3,#submenu4, #submenu5{
+    display: none;
+
+    & ul{
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  & li{
+    list-style-type: none;
+    font-size: 16px;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    & a{
+      text-decoration: none;
+      color: @blue;
+      height: 60px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  & li:hover a{
+    color: @blue;
+  }
+}
+#mobiles:hover{
+  #submenu{
+    display: flex;
+    font-weight: 300;
+    position: absolute;
+    justify-content: space-around;
+    top: 120px;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 200px;
+    animation: fade-Out .5s both, fade-in .5s both;
+    background-color: white;
+    box-shadow: 3px 5px 5px gray;
+    & ul{
+    display: flex;
+    }
+    & .picture{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    & a:hover{
+      width: auto;
+      color: red;
+    }
+  }
+}
+#mainMenu:hover a{
+  color: @light;
+  transition: .2s;
+}
+
+#mobiles1:hover, #mobiles1:target{
+  #submenu1{
+    display: flex;
+    font-weight: 300;
+    position: absolute;
+    justify-content: space-around;
+    top: 120px;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 200px;
+    animation: fade-Out .5s both, fade-in .5s both;
+    background-color: white;
+    box-shadow: 3px 5px 5px gray;
+    & .picture{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    & a:hover{
+      width: auto;
+      color: red;
+    }
+  }
+}
+
+#mobiles2:hover, #mobiles2:target{
+  #submenu2{
+    display: flex;
+    font-weight: 300;
+    position: absolute;
+    justify-content: space-around;
+    top: 120px;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 200px;
+    animation: fade-Out .5s both, fade-in .5s both;
+    background-color: white;
+    box-shadow: 3px 5px 5px gray;
+    & .picture{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    & a:hover{
+      width: auto;
+      color: red;
+    }
+  }
+}
+
+#mobiles3:hover, #mobiles3:target{
+  #submenu3{
+    display: flex;
+    font-weight: 300;
+    position: absolute;
+    justify-content: space-around;
+    top: 120px;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 200px;
+    animation: fade-Out .5s both, fade-in .5s both;
+    background-color: white;
+    box-shadow: 3px 5px 5px gray;
+    & .picture{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    & a:hover{
+      width: auto;
+      color: red;
+    }
+  }
+}
+
+#mobiles4:hover, #mobiles4:target{
+  #submenu4{
+    display: flex;
+    font-weight: 300;
+    position: absolute;
+    justify-content: space-around;
+    top: 120px;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 200px;
+    animation: fade-Out .5s both, fade-in .5s both;
+    background-color: white;
+    box-shadow: 3px 5px 5px gray;
+    & .picture{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+    }
+    & a:hover{
+      width: auto;
+      color: red;
+    }
+  }
+}

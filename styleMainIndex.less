@@ -1,0 +1,326 @@
+/* Colors for Vikoms */
+@light: #e1e4eb;
+@blue: #02147f;
+
+body{
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: 'Muli', sans-serif;
+}
+
+#mainContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px gray;
+    height: auto;
+    background-color: #02147f;
+    font-size: 32pt;
+  }
+  & h1:hover{
+    cursor: default;
+  }
+  #Content{
+    width: 80%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media all and (min-width: 200px) and (max-width: 1190px){
+      flex-direction: column;
+      height: auto;
+    }
+    & .figure{
+      height: 85%;
+      width: 280px;
+      position: relative;
+      background-color: #e1e4eb;
+    }
+    /* весь контейнер поддерживает перспективу */
+    .flip-container {
+      perspective: 1000px;
+      @media all and (min-width: 200px) and (max-width: 1190px){
+        margin: 20px;
+      }
+    }
+    /* переверните сторону при проведении мышью */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    .flip-container, .front, .back {
+      width: 300px;
+      height: 400px;
+    }
+
+    /* здесь находится скорость перевертывания */
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+
+      position: relative;
+    }
+
+    /* скройте обратную сторону во время переворота */
+    .front, .back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 2px solid @blue;
+    }
+
+    /* лицевая сторона размещена над обратной */
+    .front {
+      z-index: 2;
+      background-color: @light;
+      & figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & figcaption{
+          margin-top: 15px;
+          color: #02147f;
+        }
+      }
+    }
+
+    /* обратная, изначально скрытая сторона */
+    .back {
+      transform: rotateY(180deg);
+      background-color: @blue;
+      & div{
+        padding: 5px;
+        text-align: center;
+        color: @light;
+      }
+    }
+  }
+}
+
+#Direction{
+  background-color: @light;
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  & h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px gray;
+    height: auto;
+    background-color: #02147f;
+    font-size: 32pt;
+  }
+  & h1:hover{
+    cursor: default;
+  }
+  & #reasonBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    min-height: 700px;
+    & #rowReason1{
+      display: flex;
+      width: 100%;
+      height: 40%;
+      justify-content: space-around;
+      align-items: center;
+      & .reason{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        background: @blue;
+        & .reasonText{
+          font-size: 22px;
+          color: @light;
+          text-align: center;
+          display: none;
+        }
+        & .numberOfReason{
+          color: @light;
+          font-size: 50px;
+          font-weight: 800;
+        }
+        @media all and (min-width: 200px) and (max-width: 877px){
+          margin: 30px;
+        }
+      }
+      & .reason:hover{
+        cursor: default;
+        & .reasonText{
+          display: block;
+          animation: fade-in 1s both;
+        }
+        & .numberOfReason{
+          display: none;
+        }
+      }
+      @media all and (min-width: 200px) and (max-width: 877px){
+        flex-direction: column;
+      }
+    }
+    & #rowReason2{
+      display: flex;
+      width: 100%;
+      height: 40%;
+      justify-content: space-around;
+      align-items: center;
+      & .reason{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        background-color: @blue;
+        & .reasonText{
+          font-size: 22px;
+          color: @light;
+          text-align: center;
+          display: none;
+        }
+        & .numberOfReason{
+          color: @light;
+          font-size: 50px;
+          font-weight: 800;
+        }
+        @media all and (min-width: 200px) and (max-width: 877px){
+          margin: 30px;
+        }
+      }
+      & .reason:hover{
+        cursor: default;
+        & .reasonText{
+          display: block;
+          animation: fade-in 1s both;
+        }
+        & .numberOfReason{
+          display: none;
+        }
+      }
+      @media all and (min-width: 200px) and (max-width: 877px){
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 180px;
+  & #footerContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #02147f;
+    & #row1, #row2{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 50%;
+      & span{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #e1e4eb;
+      }
+      & span:hover{
+        color: red;
+        transition: .2s linear;
+        cursor: pointer;
+      }
+      & img{
+        margin-right: 5px;
+        color: #e1e4eb;
+      }
+      & #footerLinks{
+        display: flex;
+        flex-direction: column;
+        & a{
+          text-decoration: none;
+          color: #e1e4eb;
+        }
+        & a:hover{
+          color: red;
+          transition: .2s linear;
+        }
+      }
+      & #adresses{
+        display: flex;
+        & #adress{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 25px;
+          & #adress1, #adress2{
+            & a{
+              text-decoration: none;
+              color: #e1e4eb;
+              font-family: 'Muli', sans-serif;
+            }
+            & a:hover{
+              color: red;
+              transition: .2s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+  & #footerIcon{
+    display: flex;
+    align-items: center;
+    background-color: #02147f;
+    width: 30%;
+    height: 100%;
+  }
+}
+
+#footerCopy{
+  width: 100%;
+  height: 30px;
+  background-color: @light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @blue;
+  font-size: 0.9em;
+}
+
+.scrollTop{
+  background:url('icons/arrow.png') 0 0 no-repeat;
+  width: 40px; /* изменяем: ширина картинки */
+  height: 47px; /* изменяем: высота кнопки - половина высоты картинки */
+  bottom: 40px;
+  right: 60px;
+}

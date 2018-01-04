@@ -1,0 +1,138 @@
+/* Colors for Vikoms */
+body {
+  margin: 0;
+  background-color: #e1e4eb;
+  font-family: 'Droid Sans', sans-serif;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+#Direction {
+  background-color: #e1e4eb;
+  width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#Direction h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px gray;
+  height: auto;
+  background-color: #02147f;
+  font-size: 32pt;
+}
+
+#Direction h1:hover{
+  cursor: default;
+}
+
+#Direction #reasonBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  min-height: 700px;
+}
+#Direction #reasonBox #rowReason1 {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+#Direction #reasonBox #rowReason1 .reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  background: #02147f;
+}
+#Direction #reasonBox #rowReason1 .reason .reasonText {
+  font-size: 22px;
+  color: #e1e4eb;
+  text-align: center;
+  display: none;
+}
+#Direction #reasonBox #rowReason1 .reason .numberOfReason {
+  color: #e1e4eb;
+  font-size: 50px;
+  font-weight: 800;
+}
+@media all and (min-width: 200px) and (max-width: 877px) {
+  #Direction #reasonBox #rowReason1 .reason {
+    margin: 30px;
+  }
+}
+#Direction #reasonBox #rowReason1 .reason:hover {
+  cursor: default;
+}
+#Direction #reasonBox #rowReason1 .reason:hover .reasonText {
+  display: block;
+  animation: fade-in 1s both;
+}
+#Direction #reasonBox #rowReason1 .reason:hover .numberOfReason {
+  display: none;
+}
+@media all and (min-width: 200px) and (max-width: 877px) {
+  #Direction #reasonBox #rowReason1 {
+    flex-direction: column;
+  }
+}
+#Direction #reasonBox #rowReason2 {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
+}
+#Direction #reasonBox #rowReason2 .reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: #02147f;
+}
+#Direction #reasonBox #rowReason2 .reason .reasonText {
+  font-size: 22px;
+  color: #e1e4eb;
+  text-align: center;
+  display: none;
+}
+#Direction #reasonBox #rowReason2 .reason .numberOfReason {
+  color: #e1e4eb;
+  font-size: 50px;
+  font-weight: 800;
+}
+@media all and (min-width: 200px) and (max-width: 877px) {
+  #Direction #reasonBox #rowReason2 .reason {
+    margin: 30px;
+  }
+}
+#Direction #reasonBox #rowReason2 .reason:hover {
+  cursor: default;
+}
+#Direction #reasonBox #rowReason2 .reason:hover .reasonText {
+  display: block;
+  animation: fade-in 1s both;
+}
+#Direction #reasonBox #rowReason2 .reason:hover .numberOfReason {
+  display: none;
+}
+@media all and (min-width: 200px) and (max-width: 877px) {
+  #Direction #reasonBox #rowReason2 {
+    flex-direction: column;
+  }
+}

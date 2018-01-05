@@ -41,7 +41,7 @@
 #content #mainBlock #accordion {
   width: 50%;
   height: auto;
-  margin: 20px;
+  margin: 70px 20px;
   animation: fade-Out 0.6s 1.2s both, fade-in 0.6s 1.2s both;
 }
 #content #mainBlock #accordion .accordion-title {

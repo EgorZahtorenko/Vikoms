@@ -18,6 +18,7 @@
       color: #02147f;
       font-size: 20px;
       text-align: center;
+      animation: fade-Out .6s .6s both, fade-in .6s .6s both;
     }
     & h1{
       color: white;
@@ -30,6 +31,7 @@
       height: auto;
       background-color: #02147f;
       font-size: 32pt;
+      animation: fade-Out .6s both, fade-in .6s both;
     }
     & h1:hover{
       cursor: default;
@@ -38,6 +40,7 @@
       width: 50%;
       height: auto;
       margin: 20px;
+      animation: fade-Out .6s 1.2s both, fade-in .6s 1.2s both;
       & .accordion-title {
         background-color: #02147f;
         color: white;
@@ -50,8 +53,12 @@
         font-size: 20pt;
         font-weight: 500;
       }
+      & .accordion-title:hover{
+        cursor: pointer;
+      }
       & .accordion-title.active + .accordion-cont {
         display: block;
+        animation: fade-Out .35s both, fade-in .35s both;
       }
       & .accordion-cont {
         display: none;

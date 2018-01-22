@@ -66,3 +66,9 @@
 #content #mainBlock #accordion .accordion-cont {
   display: none;
 }
+#content #mainBlock #accordion .accordion-cont p span > a {
+  text-decoration: none;
+}
+#content #mainBlock #accordion .accordion-cont p a:visited {
+  color: red;
+}
